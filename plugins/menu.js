@@ -25,12 +25,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'main': 'Main',
       'xp': 'Exp & Limit',
       'sticker': 'Sticker',
-      'quotes': 'Quotes',
       'internet': 'Internet',
       'downloader': 'Downloader',
       'tools': 'Tools',
-      'advanced': 'Advanced',
-      '': 'No Category',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
