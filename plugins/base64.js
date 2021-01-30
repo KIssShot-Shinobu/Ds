@@ -3,7 +3,7 @@ let handler = async (m, { command, text }) => {
   m.reply(Buffer.from(txt, 'utf-8').toString('base64'))
 }
 handler.help = ['base64']
-handler.tags = ['tools']
+handler.tags = ['']
 handler.command = /^base64$/i
 
 module.exports = handler
