@@ -23,7 +23,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let totalreg = Object.keys(global.DATABASE._data.users).length
     let tags = {
       'xp': 'Exp & Limit',
-      'sticker': 'Sticker',
       'fun': 'Fun',
       'tools': 'Tools',
     }
