@@ -21,7 +21,7 @@ let handler = async(m, { conn, args, usedPrefix }) => {
 }
 
 handler.help = ['anime'].map(v => v + ' <query>')
-handler.tags = ['tools']
+handler.tags = ['fun']
 handler.command = /^(anime)$/i
 handler.owner = false
 handler.mods = false
