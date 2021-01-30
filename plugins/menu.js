@@ -24,7 +24,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let tags = {
       'xp': 'Exp & Limit',
       'sticker': 'Sticker',
-      'quotes': 'Quotes',
+      'fun': 'Fun',
       'tools': 'Tools',
     }
     for (let plugin of Object.values(global.plugins))
