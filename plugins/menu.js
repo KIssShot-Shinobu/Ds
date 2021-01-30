@@ -50,9 +50,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 
 *DUEL STANDBY BOT MENU versi 1.0 by KissShot*
  \n\n%readmore`
-    let header = conn.menu.header || '╭════•›「 %category 」'
-    let body   = conn.menu.body   || '┠❥ %cmd%islimit'
-    let footer = conn.menu.footer || '╰═══════════════'
+    let header = conn.menu.header || '「 %category 」'
+    let body   = conn.menu.body   || ' %cmd%islimit'
+    let footer = conn.menu.footer || '
     let after  = conn.menu.after  || conn.user.jid == global.conn.user.jid ? '' : `\nPowered by: ${global.conn.user.jid.split`@`[0]}`
     let _text  = before + '\n'
     for (let tag in groups) {
