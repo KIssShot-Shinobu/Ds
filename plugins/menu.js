@@ -27,7 +27,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'sticker': 'Sticker',
       'kerang': 'Kerang Ajaib',
       'quotes': 'Quotes',
-      'internet': 'Internet',
       'downloader': 'Downloader',
       'tools': 'Tools',
     }
