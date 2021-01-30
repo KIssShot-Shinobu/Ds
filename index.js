@@ -2,12 +2,12 @@ console.log('Starting...')
 let { spawn } = require('child_process')
 let path = require('path')
 const CFonts  = require('cfonts')
-CFonts.say('WHATSAPP BOT', {
+CFonts.say('TERMUX WHATSAPP BOT', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say('\'Instagram:\' ff.kelvin15', {
+CFonts.say('\'YouTube:\' Drawl Nag', {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
