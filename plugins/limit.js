@@ -9,8 +9,8 @@ let handler = async(m, { conn, participants, text, usedPrefix }) => {
     m.reply('Done!')
 }
 handler.help = ['limit <jumlah>']
-handler.tags = ['owner']
+handler.tags = ['mods']
 handler.command = /^limit$/i
-handler.owner = true
+handler.mods = true
 
 module.exports = handler
