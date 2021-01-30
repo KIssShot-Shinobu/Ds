@@ -30,18 +30,10 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'sticker': 'Sticker',
       'kerang': 'Kerang Ajaib',
       'quotes': 'Quotes',
-      'admin': 'Admin',
-      'group': 'Group',
       'internet': 'Internet',
       'downloader': 'Downloader',
       'tools': 'Tools',
       'fun': 'Fun',
-      'jadibot': 'Jadi Bot',
-      'owner': 'Owner',
-      'host': 'Host',
-      'advanced': 'Advanced',
-      'info': 'Info',
-      '': 'No Category',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
@@ -76,14 +68,14 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │
 │ Uptime: *%uptime*
 │ Database: %totalreg nomor
-│ Github:
-│ github.com/kelvin44
+│ Join DS :
+│ https://cutt.ly/0ktxr9e
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
     let body   = conn.menu.body   || '│ • %cmd%islimit'
     let footer = conn.menu.footer || '╰────\n'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*kelvin44@^%version*\n\`\`\`\%npmdesc\`\`\``
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*DuelStandby@^%version*\n\`\`\`\%npmdesc\`\`\``
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
