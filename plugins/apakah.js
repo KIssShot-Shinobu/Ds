@@ -17,9 +17,9 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
-handler.fail = null
-
 handler.limit = true
+
+handler.fail = null
 
 module.exports = handler
 

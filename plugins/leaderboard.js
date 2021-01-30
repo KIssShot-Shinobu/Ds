@@ -25,7 +25,7 @@ handler.help = ['leaderboard [jumlah user]', 'lb [jumlah user]']
 handler.tags = ['xp']
 handler.command = /^(leaderboard|lb)$/i
 handler.owner = false
-handler.mods = false
+handler.mods = true
 handler.premium = false
 handler.group = false
 handler.private = false
@@ -35,6 +35,7 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.exp = 0
+handler.limit = true
 
 module.exports = handler
 

@@ -1,8 +1,5 @@
-let fs = require ('fs')
-let path = require('path')
 let handler  = async (m, { conn, usedPrefix: _p }) => {
   try {
-    let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let exp = global.DATABASE.data.users[m.sender].exp
     let limit = global.DATABASE.data.users[m.sender].limit
     let name = conn.getName(m.sender)
@@ -33,7 +30,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'internet': 'Internet',
       'downloader': 'Downloader',
       'tools': 'Tools',
-      'fun': 'Fun',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
@@ -55,27 +51,11 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
           if (menu.help) groups[tag].push(menu)
     }
     conn.menu = conn.menu ? conn.menu : {}
-    let before = conn.menu.before || `
-╭─「 ${conn.getName(conn.user.jid)} 」
-│
-│ Hai, %name!
-│
-│ *%exp XP*
-│ Tersisa *%limit Limit*
-│
-│ Tanggal: *%week %weton, %date*
-│ Waktu: *%time*
-│
-│ Uptime: *%uptime*
-│ Database: %totalreg nomor
-│ Join DS :
-│ https://cutt.ly/0ktxr9e
-╰────
-%readmore`
-    let header = conn.menu.header || '╭─「 %category 」'
-    let body   = conn.menu.body   || '│ • %cmd%islimit'
-    let footer = conn.menu.footer || '╰────\n'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Powered by https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*DuelStandby@^%version*\n\`\`\`\%npmdesc\`\`\``
+    let before = conn.menu.before || `${conn.getName(conn.user.jid)} • Bot\n\nHai, %name!\n\nTotal: *%exp XP*\nLimit Anda: *%limit Limit*\nTanggal: *%week, %date*\n Waktu: *%time*\n_Uptime: %uptime_\n  %totalreg User in database\n\nYoutube: https://youtube.com/c/duellinksC \n\n DuelStandby \n\n%readmore`
+    let header = conn.menu.header || '╭════•›「 %category 」'
+    let body   = conn.menu.body   || '┠❥ %cmd%islimit'
+    let footer = conn.menu.footer || '╰═══════════════\n'
+    let after  = conn.menu.after  || conn.user.jid == global.conn.user.jid ? '' : `\nPowered by: ${global.conn.user.jid.split`@`[0]}`
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
@@ -90,10 +70,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let replace = {
       '%': '%',
       p: _p, uptime,
-      npmname: package.name,
-      npmdesc: package.description,
-      version: package.version,
-      github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
       exp, limit, name, weton, week, date, time, totalreg,
       readmore: readMore
     }

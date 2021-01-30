@@ -51,7 +51,7 @@ let handler  = async (m, { conn, args }) => {
   ])
   .on('error', e => conn.reply(m.chat, util.format(e), m))
   .on('exit', () => {
-    conn.sendFile(m.chat, outputPath, 'nulis.jpg', 'Nihhh cuk... Tulisanmu. Awas ketauan emak:v\n *Instagram* : @ff.kelvin15' , m)
+    conn.sendFile(m.chat, outputPath, 'nulis.jpg', 'Nihhh cuk... Tulisanmu. Mager Lu?\n *Instagram* : @arpunchs' , m)
   })
 }
 handler.help = ['n'].map(v => v + 'ulis <teks>')
@@ -65,6 +65,8 @@ handler.private = false
 
 handler.admin = false
 handler.botAdmin = false
+
+handler.limit = true
 
 handler.fail = null
 

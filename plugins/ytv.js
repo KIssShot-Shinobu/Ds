@@ -8,15 +8,11 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
 *Title:* ${title}
 *Filesize:* ${filesizeF}
-_Note:Kalo gak di kirim berarti video durasinya panjang_
 *${isLimit ? 'Pakai ': ''}Link:* ${dl_link}
 `.trim(), m)
   if (!isLimit) conn.sendFile(m.chat, dl_link, 'video.mp4', `
-🐼KOPET BOT🐼
-_*Neh mhank
 *Title:* ${title}
 *Filesize:* ${filesizeF}
-🐼KOPET BOT🐼
 `.trim(), m)
 }
 handler.help = ['mp4','v',''].map(v => 'yt' + v + ' <url>')
