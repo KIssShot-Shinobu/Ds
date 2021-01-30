@@ -11,6 +11,6 @@ let handler = async(m, { conn, participants, text, usedPrefix }) => {
 handler.help = ['limit <jumlah>']
 handler.tags = ['owner']
 handler.command = /^limit$/i
-handler.owner = false
+handler.owner = true
 
 module.exports = handler

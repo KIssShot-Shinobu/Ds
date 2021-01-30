@@ -8,6 +8,5 @@ let handler = async (m, { conn }) => {
 handler.help = ['ping', 'speed']
 handler.tags = ['info', 'tools']
 
-handler.limit = true
 handler.command = /^(ping|speed)$/i
 module.exports = handler

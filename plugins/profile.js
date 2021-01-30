@@ -18,8 +18,5 @@ Link: https://wa.me/${m.sender.split`@`[0]}
 handler.help = ['profile']
 handler.tags = ['tools']
 handler.command = /^profile$/i
-
-handler.limit = true
-
 module.exports = handler
 
