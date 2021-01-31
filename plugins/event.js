@@ -12,6 +12,7 @@ event yang sedang berlangsung di duel stanby! :
 
 2. KOG rush : Senin 01 Feburari 2021 
     Max 6 jam   08:00 - 14:00 WIB 
+    By: Wewin/Kaisar
 
 `.trim(), m)
 }
