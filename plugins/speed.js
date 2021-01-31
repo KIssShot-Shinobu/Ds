@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
   m.reply(neww - old + 'ms')
 }
 handler.help = ['ping']
-handler.tags = ['info', 'tools']
+handler.tags = []
 
 handler.limit = true
 
