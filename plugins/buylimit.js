@@ -21,6 +21,8 @@ handler.private = false
 handler.admin = false
 handler.botAdmin = false
 
+handler.limit = true
+
 handler.fail = null
 handler.exp = 0
 
