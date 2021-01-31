@@ -10,7 +10,15 @@ event yang sedang berlangsung di duel stanby! :
   Phobos vs Shadow Slaye
 
 
-2. KOG Rush Februari 2021
+2. Room Harian : 328547
+
+OPEN BETA DS CHATBOT sampai jam 16.00
+silahkan akses dengan chat ".menu"
+
+DS Super League II
+Bracket: https://challonge.com/dssuperliga2
+
+KOG Rush Februari 2021
 1️⃣Deadline tgl 1 Februari 2021. Jam 14.00 WIB. (Batas Max 6 jam). 
 Reward 100k dari Wewin. 
 2️⃣KOG di tgl 28 Februari 2021. Dapat pulsa 10k dari Adhi P. 
