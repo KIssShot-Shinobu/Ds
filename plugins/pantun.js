@@ -3,7 +3,7 @@ let handler  = async (m, { conn }) => {
 }
 handler.help = ['pantun']
 handler.tags = ['fun']
-handler.command = /^(pantun)$/i
+handler.command = /^()$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
