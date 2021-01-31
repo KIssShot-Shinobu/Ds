@@ -173,7 +173,7 @@ conn.handler = async function (m) {
           console.log(e)
           this.reply(m.chat, util.format(e), m)
         } finally {
-          if (m.limit == true) 
+          if (m.limit == true) this.reply(m.chat, '', m)
         }
   			break
   		}
