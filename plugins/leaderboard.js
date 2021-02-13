@@ -22,7 +22,7 @@ ${sortedLim.slice(0, len).map(([user, data], i) => (i + 1) + '. @' + user.split`
   })
 }
 handler.help = ['leaderboard [jumlah user]', 'lb [jumlah user]']
-handler.tags = ['xp']
+handler.tags = []
 handler.command = /^(leaderboard|lb)$/i
 handler.owner = true
 handler.mods = true
