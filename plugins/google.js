@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, args }) => {
   conn.sendFile(m.chat, ss, 'screenshot.png', url + '\n\n' + msg, m)
 }
 handler.help = ['google', 'googlef'].map(v => v + ' <pencarian>')
-handler.tags = ['internet']
+handler.tags = []
 handler.command = /^googlef?$/i
 handler.owner = false
 handler.mods = false
