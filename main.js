@@ -17,7 +17,7 @@ let WAConnection = simple.WAConnection(_WAConnection)
 
 
 global.owner = ['6281515680656'] // Put your number here
-global.mods = ['6287769083019'] // Want some help?
+global.mods = ['6281515680656'] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
