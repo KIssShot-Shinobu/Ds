@@ -31,6 +31,7 @@ handler.private = false
 
 handler.admin = false
 handler.botAdmin = false
+handler.mods = true
 
 handler.fail = null
 
