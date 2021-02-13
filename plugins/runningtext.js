@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
   running(await q).then(vid => conn.sendFile(m.chat, vid, 'run.mp4', '*© Nurutomo*\nMade with FFmpeg', m))
 }
 handler.help = ['run']
-handler.tags = ['tools']
+handler.tags = []
 handler.command = /^run$/i
 handler.limit = true
 
