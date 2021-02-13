@@ -22,7 +22,7 @@ let handler = async (m, { conn, text }) => {
   conn.fakeReply(m.chat, `+${xp} XP`, who, m.text)
 }
 handler.help = ['exp <jumlah>']
-handler.tags = ['xp']
+handler.tags = []
 handler.command = /^exp$/i
 handler.owner = true
 
