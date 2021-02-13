@@ -36,7 +36,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let tags = {
 
       'xp': 'Exp & Limit',
-      'internet': 'Internet',
       'tools': 'Tools',
     }
     for (let plugin of Object.values(global.plugins))
